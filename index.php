@@ -105,3 +105,25 @@ if ((int)($_SESSION['erreurs']) == 5 || $mot == $_SESSION['mot_cacher']) {
 }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pendu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Formulaire pour proposer une lettre -->
+    <form action="but.php" method="post">
+        <input type="text" id="lettre" name="lettre" required>
+        <button type="submit">Essayer</button>
+    </form>
+
+    <!-- Formulaire pour recommencer une nouvelle partie -->
+    <form action="but.php" method="post">
+        <button type="submit" name="nouveau_mot" id="nouveau_mot">Nouveau mot</button>
+    </form>
+</body>
+</html>
