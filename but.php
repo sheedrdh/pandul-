@@ -92,6 +92,7 @@ if ((int)($_SESSION['erreurs']) == 5 || $mot == $_SESSION['mot_cacher']) {
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
